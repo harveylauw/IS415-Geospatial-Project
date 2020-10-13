@@ -1,5 +1,5 @@
-baseURL = "https://example.com"
-title = "Your title"
+baseURL = "https://bushfriends.netlify.app/"
+title = "Bushfriends"
 theme = "hugo-theme-m10c"
 paginate = 5
 
