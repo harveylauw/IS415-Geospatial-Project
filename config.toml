@@ -15,7 +15,7 @@ paginate = 5
 
 [params]
   author = "Bushfriends"
-  description = "Just a casual Bush fire & Geospatial analytics"
+  description = "Just a casual Bush fire & Geospatial Analytics"
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
