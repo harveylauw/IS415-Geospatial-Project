@@ -19,11 +19,9 @@ Past research only covered certain states in Australia and they were more releva
 
 Geographical pattern analysis of bushfire severity in Southern Australia by University of Tasmania. 
 This research paper focuses on the bushfires in Tasmania that occurred in 2013 and how its temporal patterns of fire severity are related to changes in the fire weather. 
-
 ```{r}
 knitr::include_graphics(rep('img/lit_review.jpg'))
 ```
-
 As shown in the above figure, it is evident that the fire severities pattern is in tandem with that of Forest Fire Danger Index(FFDI), which takes in factors that attribute towards forest fires such as humidity level, rainfall and temperature. 
 
 ## Methodology
