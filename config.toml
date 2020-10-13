@@ -1,7 +1,6 @@
 baseURL = "https://bushfriends.netlify.app/"
 title = "Bushfriends"
 theme = "hugo-theme-m10c"
-paginate = 5
 
 [menu]
   [[menu.main]]
