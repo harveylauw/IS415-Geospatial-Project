@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 xmlns:srv="http://www.isotc211.org/2005/srv"
+                 xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:geonet="http://www.fao.org/geonetwork"
+                 xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd    http://www.opengis.net/gml http://www.opengis.net/gml/gml.xsd"
+                 xmlns:dcat="http://www.w3.org/ns/dcat#"
+                 xmlns:dcam="http://purl.org/dc/dcam/"
+                 xmlns:aglsterms="http://www.agls.gov.au/agls/terms/"
+                 xmlns:agentterms="http://www.agls.gov.au/agls/agentterms/"
+                 xmlns:availterms="http://www.agls.gov.au/agls/availterms/"
+                 xmlns:adminterms="http://www.agls.gov.au/agls/adminterms/"
+                 xmlns:dct="http://purl.org/dc/terms/">
+    
+    
+    <gmd:fileIdentifier>
+        <gco:CharacterString>edb7e073-757e-41b2-82f7-57024de3c243</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+        <gco:CharacterString>eng</gco:CharacterString>
+    </gmd:language>
+    <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeListValue="utf8"
+                                 codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode">
+            utf8
+        </gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode"
+                          codeListValue="dataset">dataset
+        </gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+            
+                <gmd:organisationName>
+                    <gco:CharacterString>NSW Rural Fire Service</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                        <gmd:phone>
+                            <gmd:CI_Telephone>
+                            
+                                
+                            </gmd:CI_Telephone>
+                        </gmd:phone>
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                
+                            </gmd:CI_Address>
+                        </gmd:address>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                     codeListValue="pointOfContact">pointOfContact
+                    </gmd:CI_RoleCode>
+                </gmd:role>
+            
+        </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+        <gco:Date>2020-09-04T08:03:35.465692</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+        <gco:CharacterString>ANZLIC Metadata Profile: An Australian/New Zealand Profile of AS/NZS ISO 19115:2005,
+            Geographic information - Metadata
+        </gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+        <gco:CharacterString>1.1</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+            <gmd:citation>
+                <gmd:CI_Citation>
+                    <gmd:title>
+                        <gco:CharacterString>bush-fire-prone-land</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                        <gmd:CI_Date>
+                            <gmd:date>
+                                <gco:Date>2020-07-14T06:15:45.416815</gco:Date>
+                            </gmd:date>
+                            <gmd:dateType>
+                                <gmd:CI_DateTypeCode
+                                        codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
+                                        codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                            </gmd:dateType>
+                        </gmd:CI_Date>
+                    </gmd:date>
+                    <edition>
+                        <gco:CharacterString></gco:CharacterString>
+                    </edition>
+                    <identifier>
+                        <MD_Identifier>
+                            <code>
+                                <gco:CharacterString>edb7e073-757e-41b2-82f7-57024de3c243</gco:CharacterString>
+                            </code>
+                        </MD_Identifier>
+                    </identifier>
+                    <citedResponsibleParty>
+                        
+                            <CI_ResponsibleParty>
+                                <individualName>
+                                    <gco:CharacterString>NSW Rural Fire Service</gco:CharacterString>
+                                </individualName>
+                                <role>
+                                    <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</CI_RoleCode>
+                                </role>
+                            </CI_ResponsibleParty>
+                        
+                    </citedResponsibleParty>
+                </gmd:CI_Citation>
+            </gmd:citation>
+            <gmd:abstract>
+                <gco:CharacterString>Bush Fire Prone Land is mapped within a local government area, which becomes the trigger for planning for bush fire protection. Bush Fire Prone Land mapping is intended to designate areas of the State that are considered to be higher bush fire risk for development control purposes. Not being designated bush fire prone is not a guarantee that losses from bush fires will not occur. The NSW Bush Fire Prone Land dataset is a map prepared in accordance with the Guide for Bush Fire Prone Land Mapping (BFPL Mapping Guide) and certified by the Commissioner of NSW RFS under purposes of Section 10.3 of the Environmental Planning and Assessment Act 1979 No 203. 
+
+Over time there has been various releases of the BFPL Mapping Guide, in which the categories and types of vegetation included in the BFPL map have changed. The version of the guide under which, each polygon or LGA was certified is contained in the data. 
+
+BFPL is an area of land that can support a bush fire or is likely to be subject to bush fire attack, as designated on a bush fire prone land map. The definition of bushfire vegetation categories under guideline version 5b: * Vegetation Category 1 consists of: &gt; Areas of forest, woodlands, heaths (tall and short), forested wetlands and timber plantations. * Vegetation Category 2 consists of: &gt;Rainforests. &gt;Lower risk vegetation parcels. These vegetation parcels represent a lower bush fire risk to surrounding development and consist of: - Remnant vegetation; - Land with ongoing land management practices that actively reduces bush fire risk. * Vegetation Category 3 consists of: &gt; Grasslands, freshwater wetlands, semi-arid woodlands, alpine complex and arid shrublands. * Buffers are created based on the bushfire vegetation, with buffering distance being 100 metres for vegetation category 1 and 30 metres for vegetation category 2 and 3. 
+
+Vegetation excluded from the bushfire vegetation categories include isolated areas of vegetation less than one hectare, managed lands and some agricultural lands. Please refer to BFPL Mapping Guide for a full list of exclusions.
+
+The legislative context of this dataset is as follows: On 1 August 2002, the Rural Fires and Environmental Assessment Legislation Amendment Act 2002 (Amendment Act) came into effect. The Act amended both the Environmental Planning and Assessment Act 1979 and the Rural Fire Services Act 1997 to ensure that people, property and the environment are more fully protected against the dangers that may arise from bushfires. Councils are required to map bushfire prone land within their local government area, which becomes the trigger for the consideration of bushfire protection measures when developing land. BFPL Mapping Guidelines are available from www.rfs.nsw.gov.au
+
+http://www.rfs.nsw.gov.au/__data/assets/pdf_file/0011/4412/Guideline-for-Councils-to-Bushfire-Prone-Area-Land-Mapping.pdf
+</gco:CharacterString>
+            </gmd:abstract>
+            <gmd:language>
+                <gco:CharacterString>eng</gco:CharacterString>
+            </gmd:language>
+            
+            
+            
+            
+            
+            <gmd:extent>
+                <gmd:EX_Extent>
+                    
+                        
+                        <gmd:geographicElement>
+                            <gmd:EX_GeographicBoundingBox>
+                            <gmd:westBoundLongitude><gco:Decimal>141.0</gco:Decimal></gmd:westBoundLongitude>
+                            <gmd:eastBoundLongitude><gco:Decimal>154.0</gco:Decimal></gmd:eastBoundLongitude>
+                            <gmd:southBoundLatitude><gco:Decimal>-37.7</gco:Decimal></gmd:southBoundLatitude>
+                            <gmd:northBoundLatitude><gco:Decimal>-28.0</gco:Decimal></gmd:northBoundLatitude>
+                            </gmd:EX_GeographicBoundingBox>
+                        </gmd:geographicElement>
+                    
+                    <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                            <gmd:extent>
+                                <gml:TimePeriod gml:id="TP01">
+                                    <gml:beginPosition>11/01/2016</gml:beginPosition>
+                                    <gml:endPosition></gml:endPosition>
+                                </gml:TimePeriod>
+                            </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                    </gmd:temporalElement>
+                </gmd:EX_Extent>
+            </gmd:extent>
+        </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <resourceMaintenance>
+        <MD_MaintenanceInformation>
+            <maintenanceAndUpdateFrequency>
+                <MD_MaintenanceFrequencyCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</MD_MaintenanceFrequencyCode>
+            </maintenanceAndUpdateFrequency>
+        </MD_MaintenanceInformation>
+    </resourceMaintenance>
+    
+        <descriptiveKeywords>
+            <MD_Keywords>
+                
+                    <keyword>
+                        <gco:CharacterString>Administration</gco:CharacterString>
+                    </keyword>
+                
+                    <keyword>
+                        <gco:CharacterString>Emergency Management</gco:CharacterString>
+                    </keyword>
+                
+                    <keyword>
+                        <gco:CharacterString>Fire</gco:CharacterString>
+                    </keyword>
+                
+                    <keyword>
+                        <gco:CharacterString>NSW Rural Fire Service</gco:CharacterString>
+                    </keyword>
+                
+                    <keyword>
+                        <gco:CharacterString>Planning</gco:CharacterString>
+                    </keyword>
+                
+            </MD_Keywords>
+        </descriptiveKeywords>
+    
+    
+    
+    <resourceConstraints>
+        <MD_LegalConstraints>
+            <accessConstraints>
+                <MD_RestrictionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</MD_RestrictionCode>
+            </accessConstraints>
+            <otherConstraints>
+                <gco:CharacterString>license</gco:CharacterString>
+            </otherConstraints>
+        </MD_LegalConstraints>
+    </resourceConstraints>
+    <resourceConstraints>
+        <MD_LegalConstraints>
+            <useConstraints>
+                <MD_RestrictionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license">license</MD_RestrictionCode>
+            </useConstraints>
+            <useConstraints>
+                <MD_RestrictionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</MD_RestrictionCode>
+            </useConstraints>
+            <otherConstraints>
+                <gco:CharacterString>b&#39;Creative Commons Attribution&#39;</gco:CharacterString>
+            </otherConstraints>
+        </MD_LegalConstraints>
+    </resourceConstraints>
+    <resourceConstraints>
+        <MD_SecurityConstraints>
+            <classification>
+                <MD_ClassificationCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</MD_ClassificationCode>
+            </classification>
+        </MD_SecurityConstraints>
+    </resourceConstraints>
+    <topicCategory>
+        <MD_TopicCategoryCode>geoscientificInformation</MD_TopicCategoryCode>
+    </topicCategory>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>SEED Web Map</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>https://geo.seed.nsw.gov.au/Public_Viewer/index.html?viewer=Public_Viewer&amp;locale=en-AU&amp;runWorkflow=AppendLayerCatalog&amp;CatalogLayer=SEED_Catalog.264.NSW_BushFireProneLand</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>Show on SEED Web Map</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>PDF</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>https://datasets.seed.nsw.gov.au/dataset/bush-fire-prone-land/resource/data_quality_report/pdf</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>Data Quality Statement</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>URL</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>https://portal.data.nsw.gov.au/arcgis/home/item.html?id=d27f304f3e01416c9d7e46d5f8cf8ea9</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>External data page</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>ZIP</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>https://portal.data.nsw.gov.au/arcgis/home/item.html?id=3de03ae1965840cfa5dcd9e4018745a7</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>Data download page</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>PDF</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>http://www.rfs.nsw.gov.au/__data/assets/pdf_file/0011/4412/Guideline-for-Councils-to-Bushfire-Prone-Area-Land-Mapping.pdf</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>Guide for Bush Fire Prone Land Mapping</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+        <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+                <gmd:distributionFormat>
+                    <gmd:MD_Format>
+                        <gmd:name>
+                            <gco:CharacterString>WFS</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:version gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </gmd:version>
+                    </gmd:MD_Format>
+                </gmd:distributionFormat>
+                <gmd:transferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>https://portal.data.nsw.gov.au/arcgis/home/item.html?id=0ab1011d6ab7427d9a0a590b06cfcd40</gmd:URL>
+                                </gmd:linkage>
+                                
+                                
+                                    <protocol>
+                                        <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                                    </protocol>
+                                
+                                <gmd:transferSize>
+                                    <gco:Real>None</gco:Real>
+                                </gmd:transferSize>
+                                <gmd:name>
+                                    <gco:CharacterString>Connect to Web Feature Service (WFS)</gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString></gco:CharacterString>
+                                </gmd:description>
+                                
+                                    <function>
+                                        <CI_OnLineFunctionCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</CI_OnLineFunctionCode>
+                                    </function>
+                                
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:transferOptions>
+            </gmd:MD_Distribution>
+        </gmd:distributionInfo>
+    
+    <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+            <gmd:scope>
+                <gmd:DQ_Scope>
+                    <gmd:level>
+                        <gmd:MD_ScopeCode
+                                codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode"
+                                codeListValue="dataset" codeSpace="domainCode">dataset</gmd:MD_ScopeCode>
+                    </gmd:level>
+                    <gmd:levelDescription>
+                        <gmd:MD_ScopeDescription>
+                            <gmd:dataset gco:nilReason="missing">
+                                <gco:CharacterString/>
+                            </gmd:dataset>
+                        </gmd:MD_ScopeDescription>
+                    </gmd:levelDescription>
+                </gmd:DQ_Scope>
+            </gmd:scope>
+            <gmd:lineage>
+                <gmd:LI_Lineage>
+                    <gmd:statement gco:nilReason="missing">
+                        <gco:CharacterString/>
+                    </gmd:statement>
+                    <gmd:source>
+                        <gmd:LI_Source>
+                            <gmd:description gco:nilReason="missing">
+                                <gco:CharacterString/>
+                            </gmd:description>
+                        </gmd:LI_Source>
+                    </gmd:source>
+                </gmd:LI_Lineage>
+            </gmd:lineage>
+        </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+    <metadataConstraints>
+        <MD_SecurityConstraints>
+            <classification>
+                <MD_ClassificationCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</MD_ClassificationCode>
+            </classification>
+        </MD_SecurityConstraints>
+    </metadataConstraints>
+</gmd:MD_Metadata>
