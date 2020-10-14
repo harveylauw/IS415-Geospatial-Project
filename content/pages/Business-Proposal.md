@@ -82,7 +82,7 @@ Second order effect: “Observations vary from place to place due to interaction
 
 ![](/posts/Business-Proposal_files/scope.JPG)
 
-## Application System Architecture 
+## Application System Architecture
 
 ![](/posts/Business-Proposal_files/SA.JPG)
 
