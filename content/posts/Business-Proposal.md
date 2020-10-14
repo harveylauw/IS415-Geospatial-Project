@@ -20,9 +20,7 @@ Past research only covered certain states in Australia and they were more releva
 Geographical pattern analysis of bushfire severity in Southern Australia by University of Tasmania. 
 This research paper focuses on the bushfires in Tasmania that occurred in 2013 and how its temporal patterns of fire severity are related to changes in the fire weather. 
 
-```{r}
-knitr::include_graphics(rep('img/lit_review.jpg'))
-```
+![](/posts/Business-Proposal_files/lit_review.JPG)
 
 As shown in the above figure, it is evident that the fire severities pattern is in tandem with that of Forest Fire Danger Index(FFDI), which takes in factors that attribute towards forest fires such as humidity level, rainfall and temperature. 
 
@@ -46,11 +44,6 @@ Australian States (SHP)
 - Prepare dataset for Spatial Point Pattern analysis: Convert to owin & combine with bushfire data points for analysis
 
 Source: https://www.arcgis.com/home/item.html?id=66e2eac498084e218dee3a8a7f625f5f
-
-
-```{r}
-knitr::include_graphics(rep('img/Data_variables.jpg'))
-```
 
 ### Spatial Point Pattern Analysis
 Study of spatial arrangements of points in space.
@@ -80,33 +73,23 @@ Second order effect: “Observations vary from place to place due to interaction
 - Given the distribution of the points on the occurrence of bushfires in Australia, we can estimate the FRP and brightness values where the data is not observed. We use a point density raster from this dataset to identify the location where bushfire is concentrated based on the 2 variables, FRP & brightness. Here, we will adopt two deterministic methods which are the proximity techniques by breaking down to the thiessen polygons and Inverse Distance Weighted (IDW) techniques.
 - The thiessen polygons technique generates a tessellated surface whereby lines that split the midpoint between each spatial point are connected. Thus it encloses the area.
 - The IDW technique computes an average value for unsampled locations using values from nearby weighted locations. The weights become proportional to the proximity of the sampled points to the unsampled location and this can be specified with the IDW power coefficient.
-
+ 
 ## Application Design Storyboard
 
-```{r}
-knitr::include_graphics(rep('img/storyboard.jpg'))
-```
+![](/posts/Business-Proposal_files/storyboard.JPG)
 
 ## Project Scope of Work
 
-```{r}
-knitr::include_graphics(rep('img/scope.jpg'))
-```
+![](/posts/Business-Proposal_files/scope.JPG)
 
 ## Application System Architecture 
 
-```{r}
-knitr::include_graphics(rep('img/SA.jpg'))
-```
+![](/posts/Business-Proposal_files/SA.JPG)
 
 ## Tools & Packages
 
-```{r}
-knitr::include_graphics(rep('img/packages.jpg'))
-```
+![](/posts/Business-Proposal_files/packages.JPG)
 
 ## Challenges 
 
-```{r}
-knitr::include_graphics(rep('img/challenges.jpg'))
-```
+![](/posts/Business-Proposal_files/challenges.JPG)

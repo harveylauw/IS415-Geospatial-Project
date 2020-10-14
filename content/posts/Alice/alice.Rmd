@@ -82,7 +82,7 @@ Second order effect: “Observations vary from place to place due to interaction
 ## Application Design Storyboard
 
 ```{r}
-knitr::include_graphics(rep('img/storyboard.jpg'))
+knitr::include_graphics('img/storyboard.jpg')
 ```
 
 ## Project Scope of Work
