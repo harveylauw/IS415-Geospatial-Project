@@ -80,10 +80,10 @@ Second-order Analysis:
 
 ### Geographical Weighted Logistic Regression
 
-To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also tested the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the  
-Spearman’s rank correlation to compare thecorrelations among continuous explanatory variables
+To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also test the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the  
+Spearman’s rank correlation to compare the correlations among continuous explanatory variables
 
-- To test for the performance of the model, we use the Receiver Operating Characteristics (ROC) curve of our models to determine the optimal discrimination threshold for predicting fire occurrence. By plotting true positive rate (sensitivity) against the false positive rate (specificity), we were able to evaluate the accuracy of the model as well.Logistic regression was fitted using a generalized linear model (GLM), VIFs, ROCs and cross-validated AUCs were computed using the fmsb package in R.
+- To test for the performance of the model, we use the Receiver Operating Characteristics (ROC) curve of our models to determine the optimal discrimination threshold for predicting fire occurrence. By plotting the true positive rate (sensitivity) against the false positive rate (specificity), we were able to evaluate the accuracy of the model as well. Logistic regression was fitted using a generalized linear model (GLM), VIFs, ROCs and cross-validated AUCs were computed using the fmsb package in R.
 
 ### Spatio-temporal Point Pattern Analysis
 In addition to looking at the spatial point patterns of the bushfires in Australia, we will be looking at the "time" aspect as well. The bushfires dataset contains daily records of bushfire occurrence over a span of a few months. Having the temporal data could reveal underlying phenomenon of the spread of bushfires over time that might have been overlooked by purely analysing spatial point patterns. We will be exploring the possible methods of "analyzing, simulating and displaying space-time point patterns" through the us of the stpp package.  
