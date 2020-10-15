@@ -13,7 +13,7 @@ In 2019, it experienced one of the worst bushfire seasons, which increasingly wo
 
 Our project goal is to study the spread of bushfires in Australia during the bushfire season, through the use of data points from 1 August 2019 to 30 September 2019 and produce insightful results after implementing appropriate geospatial analysis methods. We hope that the results will be able to assist the relevant authorities in preparing the nation for the annually occurring bushfire seasons in the near future. 
 
-Past research only covered certain states in Australia and they were more relevant for less intense bushfires. Most of them do not show much in-depth analysis of the Black Summer in 2019 and were mostly focused on the relationship between weather factors and the severity of bushfire without analysing the spread of bushfire over time. Thus our group felt the need to expand the scope of the research to the whole of Australia while covering the bushfire season that occurred in 2019. 
+Past research only covered certain states in Australia and they were more relevant for less intense bushfires. Most of them do not show much in-depth analysis of the Black Summer in 2019 and were mostly focused on the relationship between weather factors and the severity of bushfire without analysing the spread of bushfire over time. Thus, our group felt the need to expand the scope of the research to the whole of Australia while covering the bushfire season that occurred in 2019. 
 
 ## Literature review
 
@@ -53,11 +53,12 @@ Australia Land use (SHP)
 Source: https://data.gov.au/dataset/ds-sa-9712e707-1a7a-464e-a4c3-980f40770d48/details?q=land%20use
 
 ### Spatial Point Pattern Analysis
-Study of spatial arrangements of points in space.
+Study of spatial arrangements of bushfire events/data points in Australia.
 
 First-order Analysis:
-- Analyses the intensity and spatial density by measuring the distribution of events in the study region.
-- First order effect: “Observations vary from place to place due to changes in the underlying property”
+- Analyses the intensity and spatial density by measuring the distribution of bushfires in the Australia.
+- First order effect: “Observations vary from place to place due to changes in the underlying property”.
+- First order properties are described by the intensity of the observations.
 - Possible techniques:
   - Density-based:
     - Quadrant analysis
@@ -66,9 +67,10 @@ First-order Analysis:
     - Nearest Neighbour Index
     
 Second-order Analysis:
-- Analyses the interaction between two arbitrary points. 
-Second order effect: “Observations vary from place to place due to interaction effects between observations”
-- Conduct Complete Spatial Randomness (CSR) test on the point events to evaluate if there are signs of clustering, dispersion, or random.  
+- Analyses the interaction between bushfire data points to identify any possible relationship. 
+- Second order effect: “Observations vary from place to place due to interaction effects between observations”.
+- Second order properties are described by the relationship between the observations.
+- Conduct Complete Spatial Randomness (CSR) test on the bushfire point events to evaluate if there are signs of clustering, dispersion, or random.  
 - Possible techniques:
   - G function
   - F function
@@ -76,12 +78,17 @@ Second order effect: “Observations vary from place to place due to interaction
   - L function
 - Complete Spatial Randomness is satisfied when (1) any event has equal probability of being in any location (first order effect) and (2) the location of one event is independent of the location of another event (second order effect) 
 
+<<<<<<< HEAD
 ### Geographical Weighted Logistic Regression
 
 To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also tested the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the  
 Spearman’s rank correlation to compare thecorrelations among continuous explanatory variables
 
 - To test for the performance of the model, we use the Receiver Operating Characteristics (ROC) curve of our models to determine the optimal discrimination threshold for predicting fire occurrence. By plotting true positive rate (sensitivity) against the false positive rate (specificity), we were able to evaluate the accuracy of the model as well.Logistic regression was fitted using a generalized linear model (GLM), VIFs, ROCs and cross-validated AUCs were computed using the fmsb package in R.
+=======
+### Spatio-temporal Point Pattern Analysis
+In addition to looking at the spatial point patterns of the bushfires in Australia, we will be looking at the "time" aspect as well. The bushfires dataset contains daily records of bushfire occurrence over a span of a few months. Having the temporal data could reveal underlying phenomenon of the spread of bushfires over time that might have been overlooked by purely analysing spatial point patterns. We will be exploring the possible methods of "analyzing, simulating and displaying space-time point patterns" through the us of the stpp package.  
+>>>>>>> 7eb128fde22805e1062e83115a2b584b20b57c33
 
 ### Geostatistical Interpolation
 Given the distribution of the points on the occurrence of bushfires in Australia, we can estimate the FRP and brightness values where the data is not observed. We use a point density raster from this dataset to identify the location where bushfire is concentrated based on the 2 variables, FRP & brightness. Here, we will adopt two deterministic methods which are the proximity techniques by breaking down to the thiessen polygons and Inverse Distance Weighted (IDW) techniques.
