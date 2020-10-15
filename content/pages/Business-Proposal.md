@@ -80,8 +80,7 @@ Second-order Analysis:
 
 ### Geographical Weighted Logistic Regression
 
-To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also test the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the  
-Spearman’s rank correlation to compare the correlations among continuous explanatory variables
+To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also test the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the Spearman’s rank correlation to compare the correlations among continuous explanatory variables
 
 - To test for the performance of the model, we use the Receiver Operating Characteristics (ROC) curve of our models to determine the optimal discrimination threshold for predicting fire occurrence. By plotting the true positive rate (sensitivity) against the false positive rate (specificity), we were able to evaluate the accuracy of the model as well. Logistic regression was fitted using a generalized linear model (GLM), VIFs, ROCs and cross-validated AUCs were computed using the fmsb package in R.
 
