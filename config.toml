@@ -18,7 +18,7 @@ theme = "hugo-theme-m10c"
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
-    url = "https://github.com/harveylauw2017/IS415-Geospatial-Project"
+    url = ""
   #[[params.social]]
   #  name = "twitter"
   #  url = "https://twitter.com/gohugoio"
