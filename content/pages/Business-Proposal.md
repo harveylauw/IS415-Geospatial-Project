@@ -45,6 +45,13 @@ Australian States (SHP)
 
 Source: https://www.arcgis.com/home/item.html?id=66e2eac498084e218dee3a8a7f625f5f
 
+Australia Land use (SHP)
+- Check for NA values
+- Check for invalid geometry
+- Prepare dataset for Geographical Weighted logistic regression
+
+Source: https://data.gov.au/dataset/ds-sa-9712e707-1a7a-464e-a4c3-980f40770d48/details?q=land%20use
+
 ### Spatial Point Pattern Analysis
 Study of spatial arrangements of points in space.
 
@@ -69,8 +76,15 @@ Second order effect: “Observations vary from place to place due to interaction
   - L function
 - Complete Spatial Randomness is satisfied when (1) any event has equal probability of being in any location (first order effect) and (2) the location of one event is independent of the location of another event (second order effect) 
 
+### Geographical Weighted Logistic Regression
+
+To perform univariate logistic regression models for each explanatory variable which are the types of classes of land cover to evaluate the independent influence of each variable on the fire occurrence. Following the suggestions of Serneels and Lambin (2001), we can also tested the performance of quadratic or logarithmic versions of continuous variables. To avoid the effects of multicollinearity, we attempt to use the  
+Spearman’s rank correlation to compare thecorrelations among continuous explanatory variables
+
+- To test for the performance of the model, we use the Receiver Operating Characteristics (ROC) curve of our models to determine the optimal discrimination threshold for predicting fire occurrence. By plotting true positive rate (sensitivity) against the false positive rate (specificity), we were able to evaluate the accuracy of the model as well.Logistic regression was fitted using a generalized linear model (GLM), VIFs, ROCs and cross-validated AUCs were computed using the fmsb package in R.
+
 ### Geostatistical Interpolation
-- Given the distribution of the points on the occurrence of bushfires in Australia, we can estimate the FRP and brightness values where the data is not observed. We use a point density raster from this dataset to identify the location where bushfire is concentrated based on the 2 variables, FRP & brightness. Here, we will adopt two deterministic methods which are the proximity techniques by breaking down to the thiessen polygons and Inverse Distance Weighted (IDW) techniques.
+Given the distribution of the points on the occurrence of bushfires in Australia, we can estimate the FRP and brightness values where the data is not observed. We use a point density raster from this dataset to identify the location where bushfire is concentrated based on the 2 variables, FRP & brightness. Here, we will adopt two deterministic methods which are the proximity techniques by breaking down to the thiessen polygons and Inverse Distance Weighted (IDW) techniques.
 - The thiessen polygons technique generates a tessellated surface whereby lines that split the midpoint between each spatial point are connected. Thus it encloses the area.
 - The IDW technique computes an average value for unsampled locations using values from nearby weighted locations. The weights become proportional to the proximity of the sampled points to the unsampled location and this can be specified with the IDW power coefficient.
  
