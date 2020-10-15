@@ -17,7 +17,7 @@ theme = "hugo-theme-m10c"
   description = "IS415 G1T1 - Analysing the spread of bushfires in Australia"
   menu_item_separator = " - "
   [[params.social]]
-    name = "IS415 G1T1 Project Github"
+    name = "github"
     url = "https://github.com/harveylauw2017/IS415-Geospatial-Project"
   #[[params.social]]
   #  name = "twitter"
