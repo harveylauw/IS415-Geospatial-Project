@@ -14,14 +14,14 @@ theme = "hugo-theme-m10c"
 
 [params]
   author = "Bushfriends"
-  description = "Just a casual Bush fire & Geospatial Analytics"
+  description = "IS415 G1T1 - Analysing the spread of bushfires in Australia"
   menu_item_separator = " - "
   [[params.social]]
-    name = "github"
-    url = "https://github.com/gohugoio"
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/gohugoio"
+    name = "IS415 G1T1 Project Github"
+    url = "https://github.com/harveylauw2017/IS415-Geospatial-Project"
+  #[[params.social]]
+  #  name = "twitter"
+  #  url = "https://twitter.com/gohugoio"
 
   # Brown theme
   #[params.style]
