@@ -5,24 +5,28 @@ title: Project Proposal
 
 ## Introduction
 
-Australia has experienced a regular occurrence of bushfires every year which played a major role in defining the country's geographical characteristics that we see now. Due to its high temperatures and low humidity, Australia's climate has become more ideal for widespread bushfires. 
+Dengue fever has always been observed in Singapore ever since the first outbreak was reported back in 1901. The number of cases has increased significantly over the past few decades and in 2005, the country experienced the worst health crisis since the SARS epidemic which occurred in year 2003. The mosquito-borne tropical disease has no proper cure nor vaccine yet. 
 
-In 2019, it experienced one of the worst bushfire seasons, which increasingly worsened throughout the season to the extent that the situation went out of control. Also known as Black Summer, this particular period in 2019 caused approximately 72,000 square miles of land to be burnt in the process. This led to various detrimental effects on the environment. Some of the significant impacts would be the loss of millions of lives of animals and their habitats as well as worsening air quality in larger cities due to harmful smoke. The hazardous air quality affected Australia's neighbouring countries such as New Zealand, as such impact cannot be strictly retained within borders. 
+Ever since Singapore first went into circuit breaker period on 7th April, the number of COVID-19 confirmed cases has been dropping but on contrary, the number of dengue cases spiked up to the extent that it crossed the 10,000 mark in June.
+Experts claimed that the surge in dengue cases is an expected result of circuit breaker due to several reasons. Firstly, commercial areas and construction sites have been neglected due to the lack of activities which make perfect spots for Aedes aegypti mosquito to breed. Secondly, with more people staying at home, there is higher risk of dengue transmission in domestic settings. 
+
+As of October 2020, a total of 28 people have passed away from dengue fever this year, which is the highest number of fatalities within the past 15 years. As the majority of the fatalities observed in 2020 occurred in the active dengue clusters, it is essential for us to focus on the identified cluster areas so that better measures can be implemented for these areas. 
 
 ## Motivation & Objectives
 
-Our project goal is to study the spread of bushfires across all the states in  Australia during the bushfire season, through the use of data points from 1 August 2019 to 30 September 2019 and produce insightful results after implementing appropriate geospatial analysis methods. We hope that the results will be able to assist the relevant authorities in preparing the nation for the annually occurring bushfire seasons in the near future by studying the changes over time. 
-
-We noticed that past researches only covered certain states in Australia and they were more relevant for less intense bushfires. Most of them do not show much in-depth analysis of the Black Summer in 2019 and were mostly focused on the relationship between weather factors and the severity of bushfire without analysing the spread of bushfire over time. Thus, our group felt the need to expand the scope of the research to the whole of Australia while covering the bushfire season that occurred in 2019. 
+Our project goal is to study the dengue clusters across Singapore from February 2020 to July 2020, which is inclusive of the circuit breaker period. We hope to  produce insightful results of dengue clusters and analyse how weather changes have contributed to the trend in dengue cases as well as its temporal changes over the past few months by implementing appropriate geospatial analysis methods. We hope that the results will be able to assist the relevant authorities in preparing the nation for the more dengue-prone season in the near future. 
 
 ## Literature review
 
-Geographical pattern analysis of bushfire severity in Southern Australia by University of Tasmania. 
-This research paper focuses on the bushfires in Tasmania that occurred in 2013 and how its temporal patterns of fire severity are related to changes in the fire weather. 
+As recommended by Prof Kam, we studied one of the last year's IS484 projects which explored spatial-temporal analysis of dengue transmission in Taiwan using 20 years' worth of data. 
+
+With the use of 4 functions (Gaussian, Box, Tri and Triweight) of Kernel Density Estimation, the team's application allows users to identify patterns of dengue clusters by adjusting the bandwidth instead of leveraging an adaptive bandwidth. 
+
+In their study, they pointed out that it is equally important to analyse the temporal aspects besides looking into the overall cumulative cases in each region. Thus one of the functions allowed users to explore different kernel functions to animate the dengue outbreak distribution, along with other parameters such as regions, density's sigma and number of bins. 
+
+The team's project also focused on finding out how dengue spread within Taiwan over time.  Exploring their application and the research paper was indeed insightful as their spatio-temporal analysis showed where and when it stopped and how it actualy spread. 
 
 ![](/posts/Business-Proposal_files/lit_review.JPG)
-
-As shown in the above figure, it is evident that the fire severities pattern is in tandem with that of Forest Fire Danger Index(FFDI), which takes in factors that attribute towards forest fires such as humidity level, rainfall and temperature. 
 
 ## Methodology
 
