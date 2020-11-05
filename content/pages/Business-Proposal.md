@@ -31,29 +31,35 @@ The team's project also focused on finding out how dengue spread within Taiwan o
 ## Methodology
 
 ### Data Wrangling
-August to September bushfire dataset (CSV) and October to January bushfire dataset (CSV)
+
+15 Feb 2020 to 10 July 2020 weekly record of dengue cases dataset (CSV)
 
 - Convert latitude and longitude variables to geometry points
-- Assign CRS to match Australian States dataset (EPSG 4326)
+- Assign CRS as EPSG 4326 (WGS 84)
+- Transform CRS to EPSG 3414 (SVY 21)
 - Check for NA values
 - Check for invalid geometry
-- Prepare dataset for Spatial Point Pattern analysis: Converting to spatstat’s ppp format & Checking for duplicated points byApply jittering approach to handle duplicated points
-Ready to be combined with study area for analysis
+- Prepare dataset for Spatial Point Pattern analysis: Converting to spatstat’s ppp format & Checking for duplicated points by applying the jittering approach to handle duplicated points
+- Ready to be combined with study area for analysis
 
-Source: https://www.kaggle.com/carlosparadis/fires-from-space-australia-and-new-zeland
+Source: https://figshare.com/articles/dataset/The_unprecedented_outbreak_of_dengue_in_Singapore_a_dataset_of_spatiotemporal_dengue_cases_covering_the_nationwide_lockdown_period_in_2020/12821153
 
-Australian States (SHP)
+MORE DATASETS TO BE ADDED!!!!!!!!!!!!!!!!!!!!!! (accurate as of 5 Nov 2020) - MPSZ? Temperature and Humidity? http://www.weather.gov.sg/climate-historical-daily/
+
+Singapore Coastal Outline Without Islands (SHP)
+- Transform CRS to EPSG 3414 (SVY 21)
 - Check for NA values
 - Check for invalid geometry
-- Prepare dataset for Spatial Point Pattern analysis: Convert to owin & combine with bushfire data points for analysis
+- Prepare dataset for Spatial Point Pattern analysis: Convert to owin & combine with dengue data points for analysis
 
-Source: https://www.arcgis.com/home/item.html?id=66e2eac498084e218dee3a8a7f625f5f
+Source: Credits to Professor Kam Tin Seong (SMU SIS) for kindly modifying the dataset to suit our analysis needs
 
 ### Spatial Point Pattern Analysis
-Study of spatial arrangements of bushfire events/data points in Australia.
+
+Study of spatial arrangements of dengue events/data points in Singapore.
 
 First-order Analysis:
-- Analyses the intensity and spatial density by measuring the distribution of bushfires in the Australia.
+- Analyses the intensity and spatial density by measuring the distribution of dengue cases in Singapore.
 - First order effect: Observations vary from place to place due to changes in the underlying property.
 - First order properties are described by the intensity of the observations.
 - Possible techniques:
@@ -64,10 +70,10 @@ First-order Analysis:
     - Nearest Neighbour Index
     
 Second-order Analysis:
-- Analyses the interaction between bushfire data points to identify any possible relationship. 
-- Second order effect: Observations vary from place to place due to interaction effects between observations?.
+- Analyses the interaction between dengue data points to identify any possible relationship. 
+- Second order effect: Observations vary from place to place due to interaction effects between observations.
 - Second order properties are described by the relationship between the observations.
-- Conduct Complete Spatial Randomness (CSR) test on the bushfire point events to evaluate if there are signs of clustering, dispersion, or random.  
+- Conduct Complete Spatial Randomness (CSR) test on the dengue cases event points to evaluate if there are signs of clustering, dispersion, or randomness.  
 - Possible techniques:
   - G function
   - F function
@@ -76,10 +82,16 @@ Second-order Analysis:
 - Complete Spatial Randomness is satisfied when (1) any event has equal probability of being in any location (first order effect) and (2) the location of one event is independent of the location of another event (second order effect) 
 
 ### Spatio-temporal Point Pattern Analysis
-In addition to looking at the spatial point patterns of the bushfires in Australia, we will be looking at the "time" aspect as well. The bushfires dataset contains daily records of bushfire occurrence over a span of a few months. Having the temporal data could reveal underlying phenomenon of the spread of bushfires over time that might have been overlooked by purely analysing spatial point patterns. We will be exploring the possible methods of "analyzing, simulating and displaying space-time point patterns" through the use of the spacetime package.  
+
+In addition to looking at the spatial point patterns of the dengue cases in Singapore, we will be looking at the "time" aspect as well. The dengue dataset contains weekly records of dengue cases occurrence over a span of a few months. Having the temporal data could reveal underlying phenomenon of the spread of dengue over time, that might have been overlooked by purely analysing spatial point patterns. We will be exploring the possible methods of "analyzing, simulating and displaying space-time point patterns" through the use of the STPP package. The specific analysis methods that we will be applying is ASTIKhat and LISTAhat.
+
+### Geographically weighted regression (GWR)
+
+Perform Geospatial Interpolation to obtain the raster results of Temperature and Rainfall data from Weather.gov.sg which will be used as one of the independent variable for Geographically weighted regression(GWW). GWR is a spatial statistical technique that takes non-stationary variables into consideration (e.g., climate; demographic factors; physical environment characteristics) and models the local relationships between these independent variables and an outcome of interest (also known as dependent variable) which are the number of cases by each subzones in Singapore.
+
 ## Application Design Storyboard
 
-![](/posts/Business-Proposal_files/storyboard.JPG)
+![](/posts/Business-Proposal_files/storyboard_dengue.JPG)
 
 ## Project Scope of Work
 
