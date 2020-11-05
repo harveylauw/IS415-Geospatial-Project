@@ -42,7 +42,7 @@ The team's project also focused on finding out how dengue spread within Taiwan o
 - Prepare dataset for Spatial Point Pattern analysis: Converting to spatstat’s ppp format & Checking for duplicated points by applying the jittering approach to handle duplicated points
 - Ready to be combined with study area for analysis
 
-Source: https://figshare.com/articles/dataset/The_unprecedented_outbreak_of_dengue_in_Singapore_a_dataset_of_spatiotemporal_dengue_cases_covering_the_nationwide_lockdown_period_in_2020/12821153
+Source: [Figshare](https://figshare.com/articles/dataset/The_unprecedented_outbreak_of_dengue_in_Singapore_a_dataset_of_spatiotemporal_dengue_cases_covering_the_nationwide_lockdown_period_in_2020/12821153)
 
 MORE DATASETS TO BE ADDED!!!!!!!!!!!!!!!!!!!!!! (accurate as of 5 Nov 2020) - MPSZ? Temperature and Humidity? http://www.weather.gov.sg/climate-historical-daily/
 
@@ -52,7 +52,7 @@ Singapore Coastal Outline Without Islands (SHP)
 - Check for invalid geometry
 - Prepare dataset for Spatial Point Pattern analysis: Convert to owin & combine with dengue data points for analysis
 
-Source: Credits to Professor Kam Tin Seong (SMU SIS) for kindly modifying the dataset to suit our analysis needs
+Source: Credits to [Professor Kam Tin Seong (SMU SIS)](https://www.smu.edu.sg/faculty/profile/9618/KAM-Tin-Seong) for kindly modifying the dataset to suit our analysis needs
 
 ### Spatial Point Pattern Analysis
 
