@@ -1,5 +1,5 @@
-baseURL = "https://bushfriends.netlify.app/"
-title = "Bushfriends"
+baseURL = "https://dengueals.netlify.app/"
+title = "DenguePals"
 theme = "hugo-theme-m10c"
 
 [menu]
