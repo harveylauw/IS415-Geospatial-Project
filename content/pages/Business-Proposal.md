@@ -14,7 +14,7 @@ As of October 2020, a total of 28 people have passed away from dengue fever this
 
 ## Motivation & Objectives
 
-Our project goal is to study the dengue clusters across Singapore from February 2020 to July 2020, which is inclusive of the circuit breaker period. We hope to  produce insightful results of dengue clusters and analyse how weather changes have contributed to the trend in dengue cases as well as its temporal changes over the past few months by implementing appropriate geospatial analysis methods. We hope that the results will be able to assist the relevant authorities in preparing the nation for the more dengue-prone season in the near future. 
+Our project goal is to study the dengue clusters across Singapore from February 2020 to July 2020, which is inclusive of the circuit breaker period. Our application will allow users to interact within the application to analyse the different geospatial aspects of how dengue spread in Singapore during the time period of February 2020 to July 2020. We hope to produce insightful results of dengue clusters and analyse how weather changes have contributed to the trend in dengue cases as well as its temporal changes over the past few months by implementing appropriate geospatial analysis methods. We hope that the results will be able to assist the relevant authorities in preparing the nation for the more dengue-prone season in the near future.
 
 ## Literature review
 
@@ -24,7 +24,7 @@ With the use of 4 functions (Gaussian, Box, Tri and Triweight) of Kernel Density
 
 In their study, they pointed out that it is equally important to analyse the temporal aspects besides looking into the overall cumulative cases in each region. Thus one of the functions allowed users to explore different kernel functions to animate the dengue outbreak distribution, along with other parameters such as regions, density's sigma and number of bins. 
 
-The team's project also focused on finding out how dengue spread within Taiwan over time.  Exploring their application and the research paper was indeed insightful as their spatio-temporal analysis showed where and when it stopped and how it actualy spread. 
+The team's project also focused on finding out how dengue spread within Taiwan over time.  Exploring their application and the research paper was indeed insightful as their spatio-temporal analysis showed where and when it stopped and how it actually spread. 
 
 ![](/posts/Business-Proposal_files/lit_review.JPG)
 
@@ -35,7 +35,6 @@ The team's project also focused on finding out how dengue spread within Taiwan o
 15 Feb 2020 to 10 July 2020 weekly record of dengue cases dataset (CSV)
 
 - Convert latitude and longitude variables to geometry points
-- Assign CRS as EPSG 4326 (WGS 84)
 - Transform CRS to EPSG 3414 (SVY 21)
 - Check for NA values
 - Check for invalid geometry
@@ -44,8 +43,6 @@ The team's project also focused on finding out how dengue spread within Taiwan o
 
 Source: [Figshare](https://figshare.com/articles/dataset/The_unprecedented_outbreak_of_dengue_in_Singapore_a_dataset_of_spatiotemporal_dengue_cases_covering_the_nationwide_lockdown_period_in_2020/12821153)
 
-MORE DATASETS TO BE ADDED!!!!!!!!!!!!!!!!!!!!!! (accurate as of 5 Nov 2020) - MPSZ? Temperature and Humidity? http://www.weather.gov.sg/climate-historical-daily/
-
 Singapore Coastal Outline Without Islands (SHP)
 - Transform CRS to EPSG 3414 (SVY 21)
 - Check for NA values
@@ -53,6 +50,16 @@ Singapore Coastal Outline Without Islands (SHP)
 - Prepare dataset for Spatial Point Pattern analysis: Convert to owin & combine with dengue data points for analysis
 
 Source: Credits to [Professor Kam Tin Seong (SMU SIS)](https://www.smu.edu.sg/faculty/profile/9618/KAM-Tin-Seong) for kindly modifying the dataset to suit our analysis needs
+
+Singapore Temperature & Rainfall (CSV)
+- Check for NA values
+- Check for invalid geometry
+- Transform CRS to EPSG 3414 (SVY 21)
+- Prepare dataset for Spatial Point Pattern analysis: 
+  - Perform Krigging 
+  - Convert data set into Thiessen Polygon format to generate interpolation raster
+
+Source: [Weather Gov SG](http://www.weather.gov.sg/climate-historical-daily/)
 
 ### Spatial Point Pattern Analysis
 
