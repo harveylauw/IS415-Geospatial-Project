@@ -1,0 +1,75 @@
+---
+title: "EDA"
+author: "Sin Myeong Eun"
+date: "11/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+packages = c('rgdal', 'maptools', 'raster','spatstat', 'tmap','readr','dplyr','sf','ggplot2','lubridate','plyr','plotly')
+for (p in packages){
+if(!require(p, character.only = T)){
+install.packages(p)
+}
+library(p,character.only = T)
+}
+```
+
+```{r}
+dengue <- read_csv("data/dengue outbreak_Singapore_2020.csv")
+
+for(i in 1:nrow(dengue)){
+  dengue$date[i] <- toString(dengue$date[i])
+}
+
+dengue_weekly <- dengue %>%
+  select ("case ID", "date") %>%
+  group_by(date) %>%
+  summarise(weeklycases = n())
+
+for(i in 1:nrow(dengue_weekly)){
+  x <- ymd(paste0("20", dengue_weekly$date[i]))
+  dengue_weekly$month[i] <- format(x,"%B")
+  month <- dengue_weekly$month[i]
+  dengue_weekly$month_num[i] <- match(month, month.name)
+}
+
+dengue_monthly <- dengue_weekly %>%
+  select ("weeklycases", "month") %>%
+  group_by(month) %>%
+  summarise(monthlycases = sum(weeklycases)) %>%
+  mutate(month = factor(month, levels = month.name)) %>% 
+  arrange(month)
+
+# Line chart by month
+ggplot(data=dengue_monthly, aes(x=month, y=monthlycases, group=1)) +
+  geom_line()+
+  geom_point()+
+  geom_text(aes(label = monthlycases))
+
+# Bar chart by month
+monthly_barchart <- ggplot(dengue_monthly, aes(x=month, y=monthlycases)) +
+  geom_bar(stat = "identity")
+
+# Bar chart by eweek
+for(i in 1:nrow(dengue_weekly)){
+  eweek <- paste0(i)
+  dengue_weekly$eweek[i] <- eweek
+}
+dengue_weekly$eweek <- factor(dengue_weekly$eweek, levels = dengue_weekly$eweek)
+weekly_barchart <- ggplot(dengue_weekly, aes(x=eweek, y=weeklycases)) +
+  geom_bar(stat = "identity")
+
+par(mfrow = c(1:2))
+weekly_barchart
+monthly_barchart
+```
+
+```{r}
+boxplot(weeklycases~month_num,data=dengue_weekly, main="Monthly Dengue Cases",
+   xlab="Month Number", ylab="Number of Cases")
+```
