@@ -14,7 +14,7 @@ theme = "hugo-theme-m10c"
 
 [params]
   author = "DenguePals"
-  description = "IS415 G1T1 - Analysing the spread of Dengue cases in Singapore (2020) admist the transition to the Circuit Breaker period imposed by the Singapore Government"
+  description = "IS415 G1T1 - Analysing the spread of Dengue cases in Singapore (2020) amidst the transition to the Circuit Breaker period imposed by the Singapore Government"
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
