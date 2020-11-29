@@ -1,0 +1,2 @@
+As our Presentation Recording is too big for submission even after compression, we have provided a google drive link for you to access it instead:
+- https://drive.google.com/file/d/1JvOZdSsBa6vY8a4Q-3nN-gKixO1SggLY/view?usp=sharing

@@ -1,0 +1,12 @@
+name: denguepals
+title: denguepals
+username:
+account: harveypuff
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3317895
+bundleId: 3919165
+url: https://harveypuff.shinyapps.io/denguepals/
+when: 1606659423.97073
+asMultiple: FALSE
+asStatic: FALSE
